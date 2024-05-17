@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools >= 61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-quotable"
+version = "1.0.0"
+dependencies = [
+  "requests",
+  "argparse"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Shubhadeep Dhar", email = "devshubhadeep@gmail.com"},
+]
+description = "An unofficial Python wrapper for Quotable api."
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["quotable", "api-wrapper"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: OS :: OS Independent",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/d-shubh/py-quotable.git"
+Documentation = "https://github.com/d-shubh/py-quotable.git/README.md"
+Repository = "https://github.com/d-shubh/py-quotable.git"
+
+[project.scripts]
+quotable-cli = "quotable.quotable_cli:main"
